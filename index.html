@@ -137,11 +137,15 @@
           </div>
 
           <div class="field">
-            <label>Angkatan <span class="req">*</span></label>
-            <div class="radio-group" role="radiogroup">
-              <label class="radio-pill"><input type="radio" name="angkatan" value="50" required /> <span>50</span></label>
-              <label class="radio-pill"><input type="radio" name="angkatan" value="51" /> <span>51</span></label>
-            </div>
+            <label for="angkatan">Angkatan <span class="req">*</span></label>
+            <select id="angkatan" name="angkatan" class="select-field" required>
+              <option value="" disabled selected>Pilih angkatan...</option>
+              <option value="49">49</option>
+              <option value="50">50</option>
+              <option value="51">51</option>
+              <option value="52">52</option>
+              <option value="Purna">Purna</option>
+            </select>
           </div>
 
           <div class="field">
