@@ -1,0 +1,14 @@
+{
+  "name": "bursa-kdr-pramuka-ipb",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pendataan Bursa Calon Ketua Dewan Racana — UKM Pramuka IPB University",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.5"
+  }
+}
