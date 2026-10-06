@@ -78,6 +78,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // ---- Kriteria modal ----
+  const kriteriaModal = document.getElementById("kriteria-modal");
+  const openKriteriaBtn = document.getElementById("open-kriteria");
+  const kriteriaClose = document.getElementById("kriteria-close");
+  function openKriteria() {
+    if (!kriteriaModal) return;
+    kriteriaModal.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+  function closeKriteria() {
+    if (!kriteriaModal) return;
+    kriteriaModal.hidden = true;
+    document.body.style.overflow = "";
+  }
+  if (openKriteriaBtn) openKriteriaBtn.addEventListener("click", openKriteria);
+  if (kriteriaClose) kriteriaClose.addEventListener("click", closeKriteria);
+  if (kriteriaModal) {
+    const kb = kriteriaModal.querySelector(".kriteria-modal-backdrop");
+    if (kb) kb.addEventListener("click", closeKriteria);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !kriteriaModal.hidden) closeKriteria();
+    });
+  }
+
   // ---- Modal ----
   function openModal() {
     if (!successModal) return;
