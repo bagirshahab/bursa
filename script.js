@@ -4,7 +4,7 @@
    Setelah deploy project ini ke Vercel, ganti API_BASE dengan URL
    deployment-nya, mis: const API_BASE = "https://bursa-kdr-xxx.vercel.app/api";
    ===================================================================== */
-const API_BASE = "https://GANTI-DENGAN-URL-VERCEL-BURSA.vercel.app/api";
+const API_BASE = "https://bursa-calon-kdr-pramukaipb.vercel.app/api";
 
 const SUBMIT_URL = `${API_BASE}/submit`;
 
